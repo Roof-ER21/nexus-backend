@@ -1,0 +1,107 @@
+# NEXUS Backend Dependencies
+# Production-ready with all features
+
+# ============================================
+# CORE FRAMEWORK
+# ============================================
+fastapi==0.115.0
+uvicorn[standard]==0.32.0
+python-dotenv==1.0.1
+pydantic==2.10.0
+pydantic-settings==2.6.0
+
+# ============================================
+# DATABASE
+# ============================================
+psycopg2-binary==2.9.10
+sqlalchemy==2.0.36
+alembic==1.14.0
+asyncpg==0.30.0
+
+# Vector database for RAG
+pgvector==0.3.6
+
+# ============================================
+# AI PROVIDERS
+# ============================================
+groq==0.13.0
+together==1.3.4
+openai==1.58.1  # For OpenRouter
+
+# Embeddings
+sentence-transformers==3.3.1
+torch==2.5.1
+transformers==4.47.1
+
+# ============================================
+# DOCUMENT PROCESSING
+# ============================================
+PyPDF2==3.0.1
+python-docx==1.1.2
+openpyxl==3.1.5
+Pillow==11.0.0
+pypdf==5.1.0
+pdfplumber==0.11.4
+
+# OCR for images
+pytesseract==0.3.13
+
+# ============================================
+# EMAIL GENERATION
+# ============================================
+jinja2==3.1.4
+premailer==3.10.0
+
+# ============================================
+# WEATHER API
+# ============================================
+requests==2.32.3
+aiohttp==3.11.10
+
+# ============================================
+# SECURITY & AUTHENTICATION
+# ============================================
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+python-multipart==0.0.20
+bcrypt==4.2.1
+
+# ============================================
+# CORS & MIDDLEWARE
+# ============================================
+fastapi-cors==0.0.6
+
+# Rate limiting
+slowapi==0.1.9
+limits==3.13.0
+
+# ============================================
+# VALIDATION & SERIALIZATION
+# ============================================
+email-validator==2.2.0
+python-dateutil==2.9.0.post0
+
+# ============================================
+# MONITORING & LOGGING
+# ============================================
+sentry-sdk==2.19.2
+loguru==0.7.3
+
+# ============================================
+# CACHING (optional for Phase 2)
+# ============================================
+redis==5.2.1
+hiredis==3.0.0
+
+# ============================================
+# TESTING
+# ============================================
+pytest==8.3.4
+pytest-asyncio==0.24.0
+httpx==0.28.1
+
+# ============================================
+# UTILITIES
+# ============================================
+python-slugify==8.0.4
+pytz==2024.2
